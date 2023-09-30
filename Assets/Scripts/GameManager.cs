@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         {
             this.ghosts[i].gameObject.SetActive(true);
         }
-        this.pacman.gameObject.SetActive(true);
+        this.pacman.ResetState();
     }
     private void GameOver()
     {
@@ -64,13 +64,15 @@ public class GameManager : MonoBehaviour
     { 
         this.lives = lives; 
     }
-    private void GhostEaten(Ghost ghost)
+    public void GhostEaten(Ghost ghost)
     {
         int points = ghost.points * this.ghostMultiplier;
+
         SetScore(this.score + points);
+
         this.ghostMultiplier++;
     }
-    private void PacmanEaten()
+    public void PacmanEaten()
     {
         this.pacman.gameObject.SetActive(false );
 
