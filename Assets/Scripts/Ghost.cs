@@ -32,7 +32,7 @@ public class Ghost : MonoBehaviour
         ResetState();
     }
 
-    private void ResetState()
+    public void ResetState()
     {
         this.gameObject.SetActive(true);
         this.movement.ResetState();
