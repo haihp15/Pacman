@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &942452848859801965
+--- !u!1001 &8745558474728270258
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: -2129021141497286941, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: initialBehavior
       value: 
-      objectReference: {fileID: 197681827160776151}
+      objectReference: {fileID: 2710431739862993297}
     - target: {fileID: 856419863531292772, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57,38 +57,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1969321944390571692, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.9283352
       objectReference: {fileID: 0}
     - target: {fileID: 1969321944390571692, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1969321944390571692, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2841854992794057402, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
-      propertyPath: initialDirection.x
-      value: -1
+      propertyPath: initialDirection.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4117818084805259282, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d65aa956b7569874fab274083826a77f, type: 3}
+      objectReference: {fileID: 21300000, guid: 7391304e6dcdc594484288107bfd217f, type: 3}
     - target: {fileID: 6445367637123987593, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
       propertyPath: m_Name
-      value: Ghost_Blinky
+      value: Ghost_Inky
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
---- !u!114 &197681827160776151 stripped
+--- !u!114 &2710431739862993297 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128729278416958650, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
-  m_PrefabInstance: {fileID: 942452848859801965}
+  m_CorrespondingSourceObject: {fileID: 6684208633073344547, guid: f08d78d7bee7c6a438ddeab05bb27b76, type: 3}
+  m_PrefabInstance: {fileID: 8745558474728270258}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 114ceb538a1d092478dac7de134d45d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d92be59172561645a2eda5c0df284df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

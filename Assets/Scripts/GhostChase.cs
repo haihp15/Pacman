@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class GhostChase : GhostBehavior
@@ -12,15 +11,16 @@ public class GhostChase : GhostBehavior
     {
         Node node = other.GetComponent<Node>();
 
-        if (node != null && this.enabled && !this.ghost.frightened.enabled)
+        if (node != null && this.enabled && !ghost.frightened.enabled)
         {
             Vector2 direction = Vector2.zero;
             float minDistance = float.MaxValue;
 
-            foreach (Vector2 availableDirection in node.availabeDirections)
+
+            foreach (Vector2 availableDirection in node.availableDirections)
             {
-                Vector3 newPosition = transform.position + new Vector3(availableDirection.x, availableDirection.y, 0.0f);
-                float distance = (this.ghost.target.position - newPosition).sqrMagnitude;
+                Vector3 newPosition = transform.position + new Vector3(availableDirection.x, availableDirection.y);
+                float distance = (ghost.target.position - newPosition).sqrMagnitude;
 
                 if (distance < minDistance)
                 {
@@ -29,7 +29,7 @@ public class GhostChase : GhostBehavior
                 }
             }
 
-            this.ghost.movement.SetDirection(direction);
+            ghost.movement.SetDirection(direction);
         }
     }
 

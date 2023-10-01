@@ -100,10 +100,15 @@ public class GameManager : MonoBehaviour
 
     public void PowerPelletEaten(PowerPellet pellet)
     {
-        
+        for (int i = 0; i < ghosts.Length; i++)
+        {
+            this.ghosts[i].frightened.Enable(pellet.duration);
+        }
+
         PelletEaten(pellet);
         CancelInvoke();
-        Invoke(nameof(ResetGhostMultiplier), pellet.duration);
+        Invoke(nameof(ghostMultiplier), pellet.duration);
+
     }
     private bool HasRemainingPellets()
     {
