@@ -1,6 +1,8 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class GhostChase : GhostBehavior
+public class GhostChase1 : GhostBehavior1
 {
     private void OnDisable()
     {
@@ -9,7 +11,7 @@ public class GhostChase : GhostBehavior
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Node node = other.GetComponent<Node>();
+        Node1 node = other.GetComponent<Node1>();
 
         if (node != null && this.enabled && !ghost.frightened.enabled)
         {

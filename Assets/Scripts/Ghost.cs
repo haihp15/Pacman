@@ -4,15 +4,15 @@ public class Ghost : MonoBehaviour
 {
     public Movement movement {get; private set;}
 
-    public GhostHome home { get; private set;}
+    public GhostHome1 home { get; private set; }
 
-    public GhostScatter scatter { get; private set;}
+    public GhostScatter1 scatter { get; private set; }
 
-    public GhostChase chase { get; private set;}
+    public GhostChase1 chase { get; private set; }
 
-    public GhostFrightened frightened { get; private set;}
+    public GhostFrightened2 frightened { get; private set; }
 
-    public GhostBehavior initialBehavior;
+    public GhostBehavior1 initialBehavior;
 
     public Transform target;
 
@@ -21,10 +21,10 @@ public class Ghost : MonoBehaviour
     private void Awake()
     {
         this.movement = GetComponent<Movement>();
-        this.home = GetComponent<GhostHome>();
-        this.scatter = GetComponent<GhostScatter>();
-        this.frightened = GetComponent<GhostFrightened>();
-        this.chase = GetComponent<GhostChase>();
+        this.home = GetComponent<GhostHome1>();
+        this.scatter = GetComponent<GhostScatter1>();
+        this.frightened = GetComponent<GhostFrightened2>();
+        this.chase = GetComponent<GhostChase1>();
     }
 
     private void Start()
@@ -44,7 +44,7 @@ public class Ghost : MonoBehaviour
         {
             this.home.Disable();
         }
-        if(this.initialBehavior != null)
+        if (this.initialBehavior != null)
         {
             this.initialBehavior.Enable();
         }
@@ -53,8 +53,8 @@ public class Ghost : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Pacman"))
-        { 
-            if(this.frightened.enabled)
+        {
+            if (this.frightened.enabled)
             {
                 FindObjectOfType<GameManager>().GhostEaten(this);
             }

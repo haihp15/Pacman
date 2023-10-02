@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Node : MonoBehaviour
+public class Node1 : MonoBehaviour
 {
     public LayerMask obstacleLayer;
 
@@ -24,6 +24,6 @@ public class Node : MonoBehaviour
         if (hit.collider == null)
         {
             this.availableDirections.Add(direction);
-        }
+        } 
     }
 }

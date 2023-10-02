@@ -1,6 +1,7 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class GhostScatter : GhostBehavior
+public class GhostScatter1 : GhostBehavior1
 {
     private void OnDisable()
     {
@@ -9,15 +10,15 @@ public class GhostScatter : GhostBehavior
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Node node = other.GetComponent<Node>();
+        Node1 node = other.GetComponent<Node1>();
 
 
-        if (node != null && enabled && !ghost.frightened.enabled)
+        if (node != null && this.enabled && !this.ghost.frightened.enabled)
         {
 
             int index = Random.Range(0, node.availableDirections.Count);
 
-            if (node.availableDirections.Count > 1 && node.availableDirections[index] == -ghost.movement.direction)
+            if (node.availableDirections[index] == -this.ghost.movement.direction && node.availableDirections.Count > 1)
             {
                 index++;
 

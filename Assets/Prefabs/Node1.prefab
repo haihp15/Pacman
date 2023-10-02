@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 836635594913496771}
   - component: {fileID: 8637100178099759386}
-  - component: {fileID: 5191398181396930271}
+  - component: {fileID: 6928756526377523921}
   m_Layer: 10
-  m_Name: Node
+  m_Name: Node1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &5191398181396930271
+--- !u!114 &6928756526377523921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7818618205422640397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc1ec438504f904ebfb7645d7e6441c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e7f8fa03ffb18e4a91f3f91e43e6de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleLayer:

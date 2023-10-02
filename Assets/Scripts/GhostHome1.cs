@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class GhostHome : GhostBehavior
+public class GhostHome1 : GhostBehavior1
 {
     public Transform inside;
 
@@ -66,3 +66,4 @@ public class GhostHome : GhostBehavior
 
     }
 }
+

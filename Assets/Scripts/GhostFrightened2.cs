@@ -1,11 +1,17 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class GhostFrightened : GhostBehavior
+public class GhostFrightened2 : GhostBehavior1
 {
     public SpriteRenderer body;
+
     public SpriteRenderer eyes;
+
     public SpriteRenderer blue;
+
     public SpriteRenderer white;
+
 
     public bool eaten { get; private set; }
 
@@ -77,7 +83,7 @@ public class GhostFrightened : GhostBehavior
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Node node = other.GetComponent<Node>();
+        Node1 node = other.GetComponent<Node1>();
 
         if (node != null && this.enabled)
         {
